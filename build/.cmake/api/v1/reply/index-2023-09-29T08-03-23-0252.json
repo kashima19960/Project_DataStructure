@@ -8,18 +8,18 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "D:/coding/Scoop/apps/cmake/3.27.5/bin/cmake.exe",
-			"cpack" : "D:/coding/Scoop/apps/cmake/3.27.5/bin/cpack.exe",
-			"ctest" : "D:/coding/Scoop/apps/cmake/3.27.5/bin/ctest.exe",
-			"root" : "D:/coding/Scoop/apps/cmake/3.27.5/share/cmake-3.27"
+			"cmake" : "D:/Scoop/apps/cmake/3.27.6/bin/cmake.exe",
+			"cpack" : "D:/Scoop/apps/cmake/3.27.6/bin/cpack.exe",
+			"ctest" : "D:/Scoop/apps/cmake/3.27.6/bin/ctest.exe",
+			"root" : "D:/Scoop/apps/cmake/3.27.6/share/cmake-3.27"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 3,
 			"minor" : 27,
-			"patch" : 5,
-			"string" : "3.27.5",
+			"patch" : 6,
+			"string" : "3.27.6",
 			"suffix" : ""
 		}
 	},
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-667965ba6565724ddb6e.json",
+			"jsonFile" : "cache-v2-ff9ed8f27df8178cdf06.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-ff0af60b7983b3788ce0.json",
+			"jsonFile" : "cmakeFiles-v1-a845c19b77d963bfdbe0.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -53,7 +53,7 @@
 			}
 		},
 		{
-			"jsonFile" : "toolchains-v1-e059acc3ab525f4ec398.json",
+			"jsonFile" : "toolchains-v1-5e5c34e00f068f2e91a0.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
@@ -90,7 +90,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "cache-v2-667965ba6565724ddb6e.json",
+						"jsonFile" : "cache-v2-ff9ed8f27df8178cdf06.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -108,7 +108,7 @@
 						}
 					},
 					{
-						"jsonFile" : "toolchains-v1-e059acc3ab525f4ec398.json",
+						"jsonFile" : "toolchains-v1-5e5c34e00f068f2e91a0.json",
 						"kind" : "toolchains",
 						"version" : 
 						{
@@ -117,7 +117,7 @@
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-ff0af60b7983b3788ce0.json",
+						"jsonFile" : "cmakeFiles-v1-a845c19b77d963bfdbe0.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{

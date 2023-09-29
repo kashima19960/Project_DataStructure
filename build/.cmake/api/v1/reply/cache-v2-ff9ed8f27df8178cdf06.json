@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/addr2line.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -31,7 +31,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/ar.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/ar.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "5"
+			"value" : "6"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -119,7 +119,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/coding/Scoop/apps/cmake/3.27.5/bin/cmake.exe"
+			"value" : "D:/Scoop/apps/cmake/3.27.6/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -131,7 +131,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/coding/Scoop/apps/cmake/3.27.5/bin/cpack.exe"
+			"value" : "D:/Scoop/apps/cmake/3.27.6/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -143,7 +143,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/coding/Scoop/apps/cmake/3.27.5/bin/ctest.exe"
+			"value" : "D:/Scoop/apps/cmake/3.27.6/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -159,7 +159,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/g++.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/g++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/gcc-ar.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -191,7 +191,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/gcc-ranlib.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -303,7 +303,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/gcc.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/gcc.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -319,7 +319,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/gcc-ar.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -335,7 +335,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/gcc-ranlib.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -447,7 +447,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/dlltool.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EDIT_COMMAND",
@@ -459,7 +459,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/coding/Scoop/apps/cmake/3.27.5/bin/cmake-gui.exe"
+			"value" : "D:/Scoop/apps/cmake/3.27.6/bin/cmake-gui.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -687,7 +687,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/ld.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/ld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -703,7 +703,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/mingw32-make.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/mingw32-make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -799,7 +799,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/nm.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -827,7 +827,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/objcopy.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/objcopy.exe"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -843,7 +843,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/objdump.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -907,7 +907,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/ranlib.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -923,7 +923,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/windres.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/windres.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -1031,7 +1031,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/readelf.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1043,7 +1043,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/coding/Scoop/apps/cmake/3.27.5/share/cmake-3.27"
+			"value" : "D:/Scoop/apps/cmake/3.27.6/share/cmake-3.27"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1251,7 +1251,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/coding/Scoop/apps/mingw/current/bin/strip.exe"
+			"value" : "D:/Scoop/apps/mingw/current/bin/strip.exe"
 		},
 		{
 			"name" : "CMAKE_TAPI",
