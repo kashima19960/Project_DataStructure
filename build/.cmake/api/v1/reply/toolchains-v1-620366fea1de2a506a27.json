@@ -10,16 +10,16 @@
 				{
 					"includeDirectories" : 
 					[
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include",
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed",
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include"
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include",
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed",
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include"
 					],
 					"linkDirectories" : 
 					[
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0",
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc",
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/lib",
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib"
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0",
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc",
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/lib",
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib"
 					],
 					"linkFrameworkDirectories" : [],
 					"linkLibraries" : 
@@ -42,7 +42,7 @@
 						"kernel32"
 					]
 				},
-				"path" : "D:/Scoop/apps/mingw/current/bin/gcc.exe",
+				"path" : "D:/scoop/apps/mingw/current/bin/gcc.exe",
 				"version" : "13.1.0"
 			},
 			"language" : "C",
@@ -60,19 +60,19 @@
 				{
 					"includeDirectories" : 
 					[
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++",
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32",
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward",
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include",
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed",
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include"
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++",
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32",
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward",
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include",
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed",
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include"
 					],
 					"linkDirectories" : 
 					[
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0",
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc",
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/lib",
-						"D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib"
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0",
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc",
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/lib",
+						"D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib"
 					],
 					"linkFrameworkDirectories" : [],
 					"linkLibraries" : 
@@ -98,7 +98,7 @@
 						"kernel32"
 					]
 				},
-				"path" : "D:/Scoop/apps/mingw/current/bin/g++.exe",
+				"path" : "D:/scoop/apps/mingw/current/bin/g++.exe",
 				"version" : "13.1.0"
 			},
 			"language" : "CXX",
@@ -124,7 +124,7 @@
 			"compiler" : 
 			{
 				"implicit" : {},
-				"path" : "D:/Scoop/apps/mingw/current/bin/windres.exe"
+				"path" : "D:/scoop/apps/mingw/current/bin/windres.exe"
 			},
 			"language" : "RC",
 			"sourceFileExtensions" : 

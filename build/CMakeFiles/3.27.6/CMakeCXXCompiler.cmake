@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "D:/Scoop/apps/mingw/current/bin/g++.exe")
+set(CMAKE_CXX_COMPILER "D:/scoop/apps/mingw/current/bin/g++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "13.1.0")
@@ -22,11 +22,11 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "D:/Scoop/apps/mingw/current/bin/ar.exe")
-set(CMAKE_CXX_COMPILER_AR "D:/Scoop/apps/mingw/current/bin/gcc-ar.exe")
-set(CMAKE_RANLIB "D:/Scoop/apps/mingw/current/bin/ranlib.exe")
-set(CMAKE_CXX_COMPILER_RANLIB "D:/Scoop/apps/mingw/current/bin/gcc-ranlib.exe")
-set(CMAKE_LINKER "D:/Scoop/apps/mingw/current/bin/ld.exe")
+set(CMAKE_AR "D:/scoop/apps/mingw/current/bin/ar.exe")
+set(CMAKE_CXX_COMPILER_AR "D:/scoop/apps/mingw/current/bin/gcc-ar.exe")
+set(CMAKE_RANLIB "D:/scoop/apps/mingw/current/bin/ranlib.exe")
+set(CMAKE_CXX_COMPILER_RANLIB "D:/scoop/apps/mingw/current/bin/gcc-ranlib.exe")
+set(CMAKE_LINKER "D:/scoop/apps/mingw/current/bin/ld.exe")
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
@@ -79,7 +79,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++;D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32;D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward;D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include;D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++;D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32;D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward;D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include;D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;mingw32;gcc_s;gcc;moldname;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc_s;gcc;moldname;mingwex;kernel32")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0;D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc;D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/lib;D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0;D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc;D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/lib;D:/scoop/apps/mingw/13.1.0-rt_v11-rev1/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

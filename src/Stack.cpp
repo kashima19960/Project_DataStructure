@@ -148,10 +148,10 @@ void PrintError(char *str, int pos)
     }
     printf("^\n");
 }
-void ParenthesisMatching(void)
+Stack_sta ParenthesisMatching(char str[])
 {
+    Stack_sta status = Stack_True;
     int index = 0;
-    char str[] = "5+5*(6)+9/3*1-(1+3(";
     char *p = str;
     Sec_Stack mystack;
     while (*p != '\0')
@@ -170,6 +170,7 @@ void ParenthesisMatching(void)
             else
             {
                 cout << "未匹配的右括号\n";
+                status = Stack_False;
                 PrintError(str, p - str);
             }
         }
@@ -179,9 +180,11 @@ void ParenthesisMatching(void)
     while (mystack.Get_Size() > 0)
     {
         cout << "未匹配的左括号\n";
+        status = Stack_False;
         PrintError(str, (char *)mystack.Get_Top() - str);
         mystack.Pop_Stack();
     }
+    return status;
 }
 // 2.中缀表达式转换成后缀表达式
 unsigned short priority(char c)
@@ -197,15 +200,22 @@ unsigned short priority(char c)
     }
     return value;
 }
-void Transform(char c[])
+char *Transform(char c[])
 {
+    if (ParenthesisMatching(c) == Stack_False)
+    {
+        exit(0);
+    }
     Link_Stack mystack;
+    char *result = new char[1024];
+    int count = 0;
     for (int i = 0; i < strlen(c); i++)
     {
         // 当操作符为数字时，直接打印输出
-        if (c[i] > '0' && c[i] < '9')
+        if (c[i] >= '0' && c[i] <= '9')
         {
-            cout << c[i] << " ";
+            // cout << c[i] << " ";
+            result[count++] = c[i];
         }
         // 当操作符为左括号时，将其存储到栈stack中成为元素符
         if (c[i] == '(')
@@ -223,7 +233,8 @@ void Transform(char c[])
                     mystack.Pop_Stack();
                     break;
                 }
-                cout << *ch << " ";
+                // cout << *ch << " ";
+                result[count++] = *ch;
                 mystack.Pop_Stack();
             }
         }
@@ -248,7 +259,8 @@ void Transform(char c[])
                     // 当操作符优先级小于或等于栈顶元素优先级的时候，弹出栈顶元素符并打印，
                     else
                     {
-                        cout << *(char *)mystack.Get_Top() << " ";
+                        // cout << *(char *)mystack.Get_Top() << " ";
+                        result[count++] = *(char *)mystack.Get_Top();
                         mystack.Pop_Stack();
                         if (mystack.Get_Size() == 0)
                         {
@@ -263,12 +275,62 @@ void Transform(char c[])
     // 遍历完字符串后，输出所有栈中元素
     while (mystack.Get_Size() > 0)
     {
-        cout << *(char *)mystack.Get_Top() << " ";
+        // cout << *(char *)mystack.Get_Top() << " ";
+        result[count++] = *(char *)mystack.Get_Top();
         mystack.Pop_Stack();
     }
+    return result;
+}
+// 3.后缀表达式的求解
+int operate(int numleft, int numright, char c)
+{
+    int result;
+    switch (c)
+    {
+    case '+':
+        result = numleft + numright;
+        break;
+    case '-':
+        result = numleft - numright;
+        break;
+    case '*':
+        result = numleft * numright;
+        break;
+    case '/':
+        result = numleft / numright;
+        break;
+    default:
+        break;
+    }
+    return result;
+}
+int CalculatePostfix(char *postfix)
+{
+    char *array = Transform(postfix);
+    Link_Stack stack;
+    for (int i = 0; i < strlen(array); i++)
+    {
+        // 当操作符为数字时，直接入栈。
+        if (array[i] >= '0' && array[i] <= '9')
+        {
+            stack.Push_Stack(new int(array[i] - '0'));
+        }
+        // 当操作符为运算符时，取栈顶数字做右计算数值并弹出，再取一个栈顶数字做左计算数值并弹出。其与运算符做四则运算，结果入栈。
+        if (array[i] == '+' || array[i] == '-' || array[i] == '*' || array[i] == '/')
+        {
+            int numberright = *(int *)stack.Get_Top();
+            stack.Pop_Stack();
+            int numberleft = *(int *)stack.Get_Top();
+            stack.Pop_Stack();
+            int result = operate(numberleft, numberright, array[i]);
+            stack.Push_Stack(new int(result));
+        }
+    }
+    // 当遍历完成后，从栈中弹出唯一数字，该数字就是这个后缀表达式运算结果。
+    return *(int *)stack.Get_Top();
 }
 void StackTest(void)
 {
-    char test[] = "8+1*3/(1-2)";
-    Transform(test);
+    char str[] = "5+5*(6)+9/3*1-1+3";
+    cout << CalculatePostfix(str);
 }

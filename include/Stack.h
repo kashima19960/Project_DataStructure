@@ -44,9 +44,6 @@ public:
     void *Get_Top();
     void clear();
 };
-// Ë³ĞòÕ»²âÊÔº¯Êı
-void test05(void);
-// Á´Ê½Õ»²âÊÔº¯Êı
 void PrintError(char *str, int pos);
 void ParenthesisMatching(void);
 void StackTest(void);

@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = D:\Scoop\apps\cmake\3.27.6\bin\cmake.exe
+CMAKE_COMMAND = D:\scoop\apps\cmake\3.27.6\bin\cmake.exe
 
 # The command to remove a file.
-RM = D:\Scoop\apps\cmake\3.27.6\bin\cmake.exe -E rm -f
+RM = D:\scoop\apps\cmake\3.27.6\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -73,90 +73,90 @@ CMakeFiles/DataStructure_Project.dir/main.cpp.obj: CMakeFiles/DataStructure_Proj
 CMakeFiles/DataStructure_Project.dir/main.cpp.obj: D:/coding/general_workspace/C_CPP_project/Project_DataStructure/main.cpp
 CMakeFiles/DataStructure_Project.dir/main.cpp.obj: CMakeFiles/DataStructure_Project.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\coding\general_workspace\C_CPP_project\Project_DataStructure\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DataStructure_Project.dir/main.cpp.obj"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructure_Project.dir/main.cpp.obj -MF CMakeFiles\DataStructure_Project.dir\main.cpp.obj.d -o CMakeFiles\DataStructure_Project.dir\main.cpp.obj -c D:\coding\general_workspace\C_CPP_project\Project_DataStructure\main.cpp
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructure_Project.dir/main.cpp.obj -MF CMakeFiles\DataStructure_Project.dir\main.cpp.obj.d -o CMakeFiles\DataStructure_Project.dir\main.cpp.obj -c D:\coding\general_workspace\C_CPP_project\Project_DataStructure\main.cpp
 
 CMakeFiles/DataStructure_Project.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructure_Project.dir/main.cpp.i"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\coding\general_workspace\C_CPP_project\Project_DataStructure\main.cpp > CMakeFiles\DataStructure_Project.dir\main.cpp.i
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\coding\general_workspace\C_CPP_project\Project_DataStructure\main.cpp > CMakeFiles\DataStructure_Project.dir\main.cpp.i
 
 CMakeFiles/DataStructure_Project.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructure_Project.dir/main.cpp.s"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\coding\general_workspace\C_CPP_project\Project_DataStructure\main.cpp -o CMakeFiles\DataStructure_Project.dir\main.cpp.s
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\coding\general_workspace\C_CPP_project\Project_DataStructure\main.cpp -o CMakeFiles\DataStructure_Project.dir\main.cpp.s
 
 CMakeFiles/DataStructure_Project.dir/src/CirCleLinkList.cpp.obj: CMakeFiles/DataStructure_Project.dir/flags.make
 CMakeFiles/DataStructure_Project.dir/src/CirCleLinkList.cpp.obj: CMakeFiles/DataStructure_Project.dir/includes_CXX.rsp
 CMakeFiles/DataStructure_Project.dir/src/CirCleLinkList.cpp.obj: D:/coding/general_workspace/C_CPP_project/Project_DataStructure/src/CirCleLinkList.cpp
 CMakeFiles/DataStructure_Project.dir/src/CirCleLinkList.cpp.obj: CMakeFiles/DataStructure_Project.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\coding\general_workspace\C_CPP_project\Project_DataStructure\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DataStructure_Project.dir/src/CirCleLinkList.cpp.obj"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructure_Project.dir/src/CirCleLinkList.cpp.obj -MF CMakeFiles\DataStructure_Project.dir\src\CirCleLinkList.cpp.obj.d -o CMakeFiles\DataStructure_Project.dir\src\CirCleLinkList.cpp.obj -c D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\CirCleLinkList.cpp
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructure_Project.dir/src/CirCleLinkList.cpp.obj -MF CMakeFiles\DataStructure_Project.dir\src\CirCleLinkList.cpp.obj.d -o CMakeFiles\DataStructure_Project.dir\src\CirCleLinkList.cpp.obj -c D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\CirCleLinkList.cpp
 
 CMakeFiles/DataStructure_Project.dir/src/CirCleLinkList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructure_Project.dir/src/CirCleLinkList.cpp.i"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\CirCleLinkList.cpp > CMakeFiles\DataStructure_Project.dir\src\CirCleLinkList.cpp.i
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\CirCleLinkList.cpp > CMakeFiles\DataStructure_Project.dir\src\CirCleLinkList.cpp.i
 
 CMakeFiles/DataStructure_Project.dir/src/CirCleLinkList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructure_Project.dir/src/CirCleLinkList.cpp.s"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\CirCleLinkList.cpp -o CMakeFiles\DataStructure_Project.dir\src\CirCleLinkList.cpp.s
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\CirCleLinkList.cpp -o CMakeFiles\DataStructure_Project.dir\src\CirCleLinkList.cpp.s
 
 CMakeFiles/DataStructure_Project.dir/src/Dynamic_array.cpp.obj: CMakeFiles/DataStructure_Project.dir/flags.make
 CMakeFiles/DataStructure_Project.dir/src/Dynamic_array.cpp.obj: CMakeFiles/DataStructure_Project.dir/includes_CXX.rsp
 CMakeFiles/DataStructure_Project.dir/src/Dynamic_array.cpp.obj: D:/coding/general_workspace/C_CPP_project/Project_DataStructure/src/Dynamic_array.cpp
 CMakeFiles/DataStructure_Project.dir/src/Dynamic_array.cpp.obj: CMakeFiles/DataStructure_Project.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\coding\general_workspace\C_CPP_project\Project_DataStructure\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DataStructure_Project.dir/src/Dynamic_array.cpp.obj"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructure_Project.dir/src/Dynamic_array.cpp.obj -MF CMakeFiles\DataStructure_Project.dir\src\Dynamic_array.cpp.obj.d -o CMakeFiles\DataStructure_Project.dir\src\Dynamic_array.cpp.obj -c D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Dynamic_array.cpp
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructure_Project.dir/src/Dynamic_array.cpp.obj -MF CMakeFiles\DataStructure_Project.dir\src\Dynamic_array.cpp.obj.d -o CMakeFiles\DataStructure_Project.dir\src\Dynamic_array.cpp.obj -c D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Dynamic_array.cpp
 
 CMakeFiles/DataStructure_Project.dir/src/Dynamic_array.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructure_Project.dir/src/Dynamic_array.cpp.i"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Dynamic_array.cpp > CMakeFiles\DataStructure_Project.dir\src\Dynamic_array.cpp.i
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Dynamic_array.cpp > CMakeFiles\DataStructure_Project.dir\src\Dynamic_array.cpp.i
 
 CMakeFiles/DataStructure_Project.dir/src/Dynamic_array.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructure_Project.dir/src/Dynamic_array.cpp.s"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Dynamic_array.cpp -o CMakeFiles\DataStructure_Project.dir\src\Dynamic_array.cpp.s
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Dynamic_array.cpp -o CMakeFiles\DataStructure_Project.dir\src\Dynamic_array.cpp.s
 
 CMakeFiles/DataStructure_Project.dir/src/LinkList_pro.cpp.obj: CMakeFiles/DataStructure_Project.dir/flags.make
 CMakeFiles/DataStructure_Project.dir/src/LinkList_pro.cpp.obj: CMakeFiles/DataStructure_Project.dir/includes_CXX.rsp
 CMakeFiles/DataStructure_Project.dir/src/LinkList_pro.cpp.obj: D:/coding/general_workspace/C_CPP_project/Project_DataStructure/src/LinkList_pro.cpp
 CMakeFiles/DataStructure_Project.dir/src/LinkList_pro.cpp.obj: CMakeFiles/DataStructure_Project.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\coding\general_workspace\C_CPP_project\Project_DataStructure\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DataStructure_Project.dir/src/LinkList_pro.cpp.obj"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructure_Project.dir/src/LinkList_pro.cpp.obj -MF CMakeFiles\DataStructure_Project.dir\src\LinkList_pro.cpp.obj.d -o CMakeFiles\DataStructure_Project.dir\src\LinkList_pro.cpp.obj -c D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\LinkList_pro.cpp
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructure_Project.dir/src/LinkList_pro.cpp.obj -MF CMakeFiles\DataStructure_Project.dir\src\LinkList_pro.cpp.obj.d -o CMakeFiles\DataStructure_Project.dir\src\LinkList_pro.cpp.obj -c D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\LinkList_pro.cpp
 
 CMakeFiles/DataStructure_Project.dir/src/LinkList_pro.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructure_Project.dir/src/LinkList_pro.cpp.i"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\LinkList_pro.cpp > CMakeFiles\DataStructure_Project.dir\src\LinkList_pro.cpp.i
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\LinkList_pro.cpp > CMakeFiles\DataStructure_Project.dir\src\LinkList_pro.cpp.i
 
 CMakeFiles/DataStructure_Project.dir/src/LinkList_pro.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructure_Project.dir/src/LinkList_pro.cpp.s"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\LinkList_pro.cpp -o CMakeFiles\DataStructure_Project.dir\src\LinkList_pro.cpp.s
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\LinkList_pro.cpp -o CMakeFiles\DataStructure_Project.dir\src\LinkList_pro.cpp.s
 
 CMakeFiles/DataStructure_Project.dir/src/Queue.cpp.obj: CMakeFiles/DataStructure_Project.dir/flags.make
 CMakeFiles/DataStructure_Project.dir/src/Queue.cpp.obj: CMakeFiles/DataStructure_Project.dir/includes_CXX.rsp
 CMakeFiles/DataStructure_Project.dir/src/Queue.cpp.obj: D:/coding/general_workspace/C_CPP_project/Project_DataStructure/src/Queue.cpp
 CMakeFiles/DataStructure_Project.dir/src/Queue.cpp.obj: CMakeFiles/DataStructure_Project.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\coding\general_workspace\C_CPP_project\Project_DataStructure\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DataStructure_Project.dir/src/Queue.cpp.obj"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructure_Project.dir/src/Queue.cpp.obj -MF CMakeFiles\DataStructure_Project.dir\src\Queue.cpp.obj.d -o CMakeFiles\DataStructure_Project.dir\src\Queue.cpp.obj -c D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Queue.cpp
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructure_Project.dir/src/Queue.cpp.obj -MF CMakeFiles\DataStructure_Project.dir\src\Queue.cpp.obj.d -o CMakeFiles\DataStructure_Project.dir\src\Queue.cpp.obj -c D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Queue.cpp
 
 CMakeFiles/DataStructure_Project.dir/src/Queue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructure_Project.dir/src/Queue.cpp.i"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Queue.cpp > CMakeFiles\DataStructure_Project.dir\src\Queue.cpp.i
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Queue.cpp > CMakeFiles\DataStructure_Project.dir\src\Queue.cpp.i
 
 CMakeFiles/DataStructure_Project.dir/src/Queue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructure_Project.dir/src/Queue.cpp.s"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Queue.cpp -o CMakeFiles\DataStructure_Project.dir\src\Queue.cpp.s
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Queue.cpp -o CMakeFiles\DataStructure_Project.dir\src\Queue.cpp.s
 
 CMakeFiles/DataStructure_Project.dir/src/Stack.cpp.obj: CMakeFiles/DataStructure_Project.dir/flags.make
 CMakeFiles/DataStructure_Project.dir/src/Stack.cpp.obj: CMakeFiles/DataStructure_Project.dir/includes_CXX.rsp
 CMakeFiles/DataStructure_Project.dir/src/Stack.cpp.obj: D:/coding/general_workspace/C_CPP_project/Project_DataStructure/src/Stack.cpp
 CMakeFiles/DataStructure_Project.dir/src/Stack.cpp.obj: CMakeFiles/DataStructure_Project.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\coding\general_workspace\C_CPP_project\Project_DataStructure\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DataStructure_Project.dir/src/Stack.cpp.obj"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructure_Project.dir/src/Stack.cpp.obj -MF CMakeFiles\DataStructure_Project.dir\src\Stack.cpp.obj.d -o CMakeFiles\DataStructure_Project.dir\src\Stack.cpp.obj -c D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Stack.cpp
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructure_Project.dir/src/Stack.cpp.obj -MF CMakeFiles\DataStructure_Project.dir\src\Stack.cpp.obj.d -o CMakeFiles\DataStructure_Project.dir\src\Stack.cpp.obj -c D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Stack.cpp
 
 CMakeFiles/DataStructure_Project.dir/src/Stack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructure_Project.dir/src/Stack.cpp.i"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Stack.cpp > CMakeFiles\DataStructure_Project.dir\src\Stack.cpp.i
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Stack.cpp > CMakeFiles\DataStructure_Project.dir\src\Stack.cpp.i
 
 CMakeFiles/DataStructure_Project.dir/src/Stack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructure_Project.dir/src/Stack.cpp.s"
-	D:\Scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Stack.cpp -o CMakeFiles\DataStructure_Project.dir\src\Stack.cpp.s
+	D:\scoop\apps\mingw\current\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\coding\general_workspace\C_CPP_project\Project_DataStructure\src\Stack.cpp -o CMakeFiles\DataStructure_Project.dir\src\Stack.cpp.s
 
 # Object files for target DataStructure_Project
 DataStructure_Project_OBJECTS = \
