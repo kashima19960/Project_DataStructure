@@ -112,9 +112,14 @@ void LinkQueue::clear(void)
 }
 void QueueTest(void)
 {
-    LinkQueue test;
+    Sec_Queue test;
     for (int i = 0; i < MAX_SIZE; i++)
     {
         test.Push(new int(i));
+    }
+    for (int i = 0; i < MAX_SIZE; i++)
+    {
+        cout << *(int *)test.Get_Front() << " ";
+        test.Pop();
     }
 }

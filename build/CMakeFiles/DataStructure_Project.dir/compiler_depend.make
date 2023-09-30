@@ -64,6 +64,7 @@ CMakeFiles/DataStructure_Project.dir/main.cpp.obj: D:/coding/general_workspace/C
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
+  D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
@@ -131,12 +132,14 @@ CMakeFiles/DataStructure_Project.dir/main.cpp.obj: D:/coding/general_workspace/C
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sec_api/string_s.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/signal.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/stddef.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/stdio.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/stdlib.h \
+  D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/string.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/swprintf.inl \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sys/timeb.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sys/types.h \
@@ -144,8 +147,8 @@ CMakeFiles/DataStructure_Project.dir/main.cpp.obj: D:/coding/general_workspace/C
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/vadefs.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/wchar.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/wctype.h \
-  D:/coding/general_workspace/C_CPP_project/Project_DataStructure/include/CirCleLinkList.h \
-  D:/coding/general_workspace/C_CPP_project/Project_DataStructure/include/ListNode.h
+  D:/coding/general_workspace/C_CPP_project/Project_DataStructure/include/ListNode.h \
+  D:/coding/general_workspace/C_CPP_project/Project_DataStructure/include/Stack.h
 
 CMakeFiles/DataStructure_Project.dir/src/CirCleLinkList.cpp.obj: D:/coding/general_workspace/C_CPP_project/Project_DataStructure/src/CirCleLinkList.cpp \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
@@ -796,6 +799,7 @@ CMakeFiles/DataStructure_Project.dir/src/Stack.cpp.obj: D:/coding/general_worksp
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
+  D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
@@ -863,12 +867,14 @@ CMakeFiles/DataStructure_Project.dir/src/Stack.cpp.obj: D:/coding/general_worksp
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sec_api/string_s.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/signal.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/stddef.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/stdio.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/stdlib.h \
+  D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/string.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/swprintf.inl \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sys/timeb.h \
   D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sys/types.h \
@@ -988,8 +994,6 @@ D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include
 
 D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc:
 
-D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar:
-
 D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h:
 
 D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/ctype.h:
@@ -1027,6 +1031,10 @@ D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include
 D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h:
 
 D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype:
+
+D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring:
+
+D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar:
 
 D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h:
 
@@ -1156,6 +1164,10 @@ D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sec_api/stdio_
 
 D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
 
+D:/coding/general_workspace/C_CPP_project/Project_DataStructure/include/LinkList_pro.h:
+
+D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sec_api/string_s.h:
+
 D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
 
 D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/signal.h:
@@ -1163,6 +1175,8 @@ D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/signal.h:
 D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/stdio.h:
 
 D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/stdlib.h:
+
+D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/string.h:
 
 D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sys/timeb.h:
 
@@ -1176,20 +1190,12 @@ D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/wchar.h:
 
 D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/wctype.h:
 
+D:/coding/general_workspace/C_CPP_project/Project_DataStructure/include/Stack.h:
+
 D:/coding/general_workspace/C_CPP_project/Project_DataStructure/src/Dynamic_array.cpp:
-
-D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring:
-
-D:/coding/general_workspace/C_CPP_project/Project_DataStructure/include/LinkList_pro.h:
-
-D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sec_api/string_s.h:
-
-D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/string.h:
 
 D:/coding/general_workspace/C_CPP_project/Project_DataStructure/include/Dynamic_array.h:
 
 D:/coding/general_workspace/C_CPP_project/Project_DataStructure/src/Queue.cpp:
 
 D:/coding/general_workspace/C_CPP_project/Project_DataStructure/include/Queue.h:
-
-D:/coding/general_workspace/C_CPP_project/Project_DataStructure/include/Stack.h:

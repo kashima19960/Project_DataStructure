@@ -183,7 +183,92 @@ void ParenthesisMatching(void)
         mystack.Pop_Stack();
     }
 }
+// 2.中缀表达式转换成后缀表达式
+unsigned short priority(char c)
+{
+    unsigned short value = 0;
+    if (c == '*' || c == '/')
+    {
+        value = 2;
+    }
+    if (c == '+' || c == '-')
+    {
+        value = 1;
+    }
+    return value;
+}
+void Transform(char c[])
+{
+    Link_Stack mystack;
+    for (int i = 0; i < strlen(c); i++)
+    {
+        // 当操作符为数字时，直接打印输出
+        if (c[i] > '0' && c[i] < '9')
+        {
+            cout << c[i] << " ";
+        }
+        // 当操作符为左括号时，将其存储到栈stack中成为元素符
+        if (c[i] == '(')
+        {
+            mystack.Push_Stack(&c[i]);
+        }
+        //  当操作符为右括号为，从栈stack中弹出栈顶元素符，并输出，直到匹配到左括号为止
+        if (c[i] == ')')
+        {
+            while (mystack.Get_Size() > 0)
+            {
+                char *ch = (char *)mystack.Get_Top();
+                if (*ch == '(')
+                {
+                    mystack.Pop_Stack();
+                    break;
+                }
+                cout << *ch << " ";
+                mystack.Pop_Stack();
+            }
+        }
+        // 当操作符为运算符时，需要将其与栈顶元素符优先级做一个比较
+        if (c[i] == '+' || c[i] == '-' || c[i] == '*' || c[i] == '/')
+        {
+            // 如果栈空就直接入栈，不用进行优先级比较
+            if (mystack.Get_Size() == 0)
+            {
+                mystack.Push_Stack(&c[i]);
+            }
+            else
+            {
+                while (mystack.Get_Size() > 0)
+                {
+                    // 当操作符优先级大于栈顶元素符优先级的时候，直接入栈
+                    if (priority(c[i]) > priority(*(char *)mystack.Get_Top()))
+                    {
+                        mystack.Push_Stack(&c[i]);
+                        break;
+                    }
+                    // 当操作符优先级小于或等于栈顶元素优先级的时候，弹出栈顶元素符并打印，
+                    else
+                    {
+                        cout << *(char *)mystack.Get_Top() << " ";
+                        mystack.Pop_Stack();
+                        if (mystack.Get_Size() == 0)
+                        {
+                            mystack.Push_Stack(&c[i]);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 遍历完字符串后，输出所有栈中元素
+    while (mystack.Get_Size() > 0)
+    {
+        cout << *(char *)mystack.Get_Top() << " ";
+        mystack.Pop_Stack();
+    }
+}
 void StackTest(void)
 {
-    ParenthesisMatching();
+    char test[] = "8+1*3/(1-2)";
+    Transform(test);
 }

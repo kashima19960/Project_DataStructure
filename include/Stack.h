@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <cstring>
 #include "ListNode.h"
 using std::cerr;
 using std::cin;

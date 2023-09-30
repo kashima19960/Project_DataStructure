@@ -143,4 +143,7 @@ CMakeFiles/DataStructure_Project.dir/src/Stack.cpp.obj: \
  D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
  D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
+ D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
+ D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/string.h \
+ D:/Scoop/apps/mingw/13.1.0-rt_v11-rev1/x86_64-w64-mingw32/include/sec_api/string_s.h \
  D:/coding/general_workspace/C_CPP_project/Project_DataStructure/include/ListNode.h

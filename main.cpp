@@ -1,5 +1,5 @@
-#include "CirCleLinkList.h"
+#include "Stack.h"
 int main(int argc, char const *argv[])
 {
-    CirCleLinkListTest();
+    StackTest();
 }
