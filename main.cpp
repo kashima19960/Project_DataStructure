@@ -1,5 +1,5 @@
-#include "Stack.h"
+#include "StringMatching.h"
 int main(int argc, char const *argv[])
 {
-    StackTest();
+    StringTest();
 }
