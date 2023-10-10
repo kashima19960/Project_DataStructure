@@ -7,3 +7,5 @@ using std::cout;
 using std::endl;
 void StringTest(void);
 int BF(const char *MainString, const char *SubString);
+void GetNextArray(const char *SubString, int *NextArray);
+int KMP(const char *MainString, const char *SubString);
