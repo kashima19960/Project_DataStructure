@@ -45,5 +45,5 @@ public:
     void clear();
 };
 void PrintError(char *str, int pos);
-void ParenthesisMatching(void);
+Stack_sta ParenthesisMatching(char str[]);
 void StackTest(void);
