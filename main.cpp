@@ -1,6 +1,6 @@
-#include "Matrix.h"
-#include "StringMatching.h"
+#include "BinaryTree.h"
+
 int main(int argc, char const *argv[])
 {
-    MatrixTest();
+    BinaryTreeTest();
 }

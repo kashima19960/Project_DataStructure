@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-
+set(CMAKE_GENERATOR "MinGW Makefiles")
 project(DataStructure_Project)
 
 file(GLOB SRC_FILE 
