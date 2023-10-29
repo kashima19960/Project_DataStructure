@@ -29,6 +29,30 @@ void Recursion_LRD(binarynode *root)
     Recursion_LRD(root->rchild);
     cout << root->c;
 }
+void GetTreeLeafNumber(binarynode *root, int &number)
+{
+    if (root == NULL)
+    {
+        return;
+    }
+    if (root->lchild == NULL && root->rchild == NULL)
+    {
+        number++;
+    }
+    GetTreeLeafNumber(root->lchild, number);
+    GetTreeLeafNumber(root->rchild, number);
+}
+int GetDepth(binarynode *root)
+{
+    if (root == NULL)
+    {
+        return 0;
+    }
+    int Ldepth = GetDepth(root->lchild);
+    int Rdepth = GetDepth(root->rchild);
+    return (Ldepth > Rdepth ? Ldepth + 1 : Rdepth + 1);
+}
+
 void BinaryTreeTest(void)
 {
     // 创建节点
@@ -47,5 +71,6 @@ void BinaryTreeTest(void)
     node3.lchild = &node4;
     node3.rchild = &node5;
     node6.rchild = &node7;
-    Recursion_DLR(&node1);
+    int number = GetDepth(&node1);
+    cout << number << endl;
 }
