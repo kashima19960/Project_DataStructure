@@ -17,3 +17,5 @@ void Recursion_LRD(binarynode *root);
 void GetTreeLeafNumber(binarynode *root, int &number);
 void BinaryTreeTest(void);
 int GetDepth(binarynode *root);
+binarynode *BinaryTreeCopy(binarynode *root);
+void BinaryTreeRelease(binarynode *root);

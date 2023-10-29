@@ -53,6 +53,29 @@ int GetDepth(binarynode *root)
     return (Ldepth > Rdepth ? Ldepth + 1 : Rdepth + 1);
 }
 
+binarynode *BinaryTreeCopy(binarynode *root)
+{
+    if (root == NULL)
+    {
+        return NULL;
+    }
+    binarynode *newnode = new binarynode;
+    newnode->c = root->c;
+    newnode->lchild = BinaryTreeCopy(root->lchild);
+    newnode->rchild = BinaryTreeCopy(root->rchild);
+    return newnode;
+}
+void BinaryTreeRelease(binarynode *root)
+{
+    if (root == NULL)
+    {
+        return;
+    }
+    BinaryTreeRelease(root->lchild);
+    BinaryTreeRelease(root->rchild);
+    cout << root->c << "has been released!" << endl;
+    delete root;
+}
 void BinaryTreeTest(void)
 {
     // 创建节点
@@ -71,6 +94,6 @@ void BinaryTreeTest(void)
     node3.lchild = &node4;
     node3.rchild = &node5;
     node6.rchild = &node7;
-    int number = GetDepth(&node1);
-    cout << number << endl;
+    binarynode *root = BinaryTreeCopy(&node1);
+    BinaryTreeRelease(root);
 }
