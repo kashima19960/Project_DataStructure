@@ -1,6 +1,6 @@
-#include "BinaryTree.h"
+#include "Search.h"
 
 int main(int argc, char const *argv[])
 {
-    BinaryTreeTest();
+    Search_Test();
 }

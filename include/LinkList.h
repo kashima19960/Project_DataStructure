@@ -104,16 +104,16 @@ public:
         }
     }
 };
-void myprint(int data)
-{
-    cout << data << " ";
-}
-void LinkListTest(void)
-{
-    LinkList<int> test;
-    for (int i = 0; i < 8; i++)
-    {
-        test.Insert(0, i);
-    }
-    test.Print(myprint);
-}
+// void myprint(int data)
+// {
+//     cout << data << " ";
+// }
+// void LinkListTest(void)
+// {
+//     LinkList<int> test;
+//     for (int i = 0; i < 8; i++)
+//     {
+//         test.Insert(0, i);
+//     }
+//     test.Print(myprint);
+// }
