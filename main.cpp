@@ -1,6 +1,6 @@
-#include "Search.h"
+#include "Sort.h"
 
 int main(int argc, char const *argv[])
 {
-    Search_Test();
+    Sort_test();
 }
