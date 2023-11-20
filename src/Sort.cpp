@@ -58,6 +58,23 @@ void SelectSort(T array[], int length)
         }
     }
 }
+template <typename T>
+void InsertSort(T array[], int length)
+{
+    int j = 0;
+    for (int i = 1; i < length; i++)
+    {
+        T temp = array[i];
+        j = i - 1;
+        // 如果temp比前面的有序序列都要小，那么会出现j=-1这种情况
+        while (temp < array[j] && j >= 0)
+        {
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j + 1] = temp;
+    }
+}
 void Sort_test(void)
 {
     int test[MAXLEN];
@@ -68,7 +85,7 @@ void Sort_test(void)
     }
     cout << "before sort:" << endl;
     PrintArray(test, MAXLEN);
-    SelectSort(test, MAXLEN);
+    InsertSort(test, MAXLEN);
     cout << "after sort:" << endl;
     PrintArray(test, MAXLEN);
 }
