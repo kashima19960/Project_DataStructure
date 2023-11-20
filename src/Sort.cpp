@@ -42,6 +42,21 @@ void BubbleSort(T array[], int length)
 template <typename T>
 void SelectSort(T array[], int length)
 {
+    for (int i = 0; i < length; i++)
+    {
+        int min = i;
+        for (int j = i; j < length; j++)
+        {
+            if (array[j] < array[min])
+            {
+                min = j;
+            }
+        }
+        if (min != i)
+        {
+            Swap(array[min], array[i]);
+        }
+    }
 }
 void Sort_test(void)
 {
@@ -53,7 +68,7 @@ void Sort_test(void)
     }
     cout << "before sort:" << endl;
     PrintArray(test, MAXLEN);
-    BubbleSort(test, MAXLEN);
+    SelectSort(test, MAXLEN);
     cout << "after sort:" << endl;
     PrintArray(test, MAXLEN);
 }

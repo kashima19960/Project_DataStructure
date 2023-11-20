@@ -6,7 +6,7 @@ using std::cerr;
 using std::cin;
 using std::cout;
 using std::endl;
-#define MAXLEN 10000
+#define MAXLEN 10
 // 交换函数
 template <typename T>
 void Swap(T &value1, T &value2);
@@ -22,4 +22,8 @@ void BubbleSort(T array[], int length);
 // 选择排序
 template <typename T>
 void SelectSort(T array[], int length);
+
+// 插入排序
+template <typename T>
+void InsertSort(T array[], int length);
 void Sort_test(void);
