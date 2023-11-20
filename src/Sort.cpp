@@ -24,16 +24,24 @@ void PrintArray(T array[], int length)
 template <typename T>
 void BubbleSort(T array[], int length)
 {
-    for (int i = 0; i < length; i++)
+    bool exchange = true;
+    for (int i = 0; i < length && exchange != false; i++)
     {
+        exchange = false;
         for (int j = 0; j < length - 1 - i; j++)
         {
+            // if语句如果没有执行,说明在本轮扫描中没有任何元素发生了交换，也就是说整个序列已经有序,没必要再接着往下扫描了
             if (array[j] > array[j + 1])
             {
                 Swap<T>(array[j], array[j + 1]);
+                exchange = true;
             }
         }
     }
+}
+template <typename T>
+void SelectSort(T array[], int length)
+{
 }
 void Sort_test(void)
 {
