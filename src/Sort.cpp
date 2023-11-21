@@ -30,7 +30,7 @@ void BubbleSort(T array[], int length)
         exchange = false;
         for (int j = 0; j < length - 1 - i; j++)
         {
-            // if璇彞濡傛灉娌℃湁鎵ц,璇存槑鍦ㄦ湰杞壂鎻忎腑娌℃湁浠讳綍鍏冪礌鍙戠敓浜嗕氦鎹紝涔熷氨鏄鏁翠釜搴忓垪宸茬粡鏈夊簭,娌″繀瑕佸啀鎺ョ潃寰�涓嬫壂鎻忎簡
+            // if语句如果没有执行,说明在本轮扫描中没有任何元素发生了交换，也就是说整个序列已经有序,没必要再接着往下扫描了
             if (array[j] > array[j + 1])
             {
                 Swap<T>(array[j], array[j + 1]);
@@ -66,7 +66,7 @@ void InsertSort(T array[], int length)
     {
         T temp = array[i];
         j = i - 1;
-        // 濡傛灉temp姣斿墠闈㈢殑鏈夊簭搴忓垪閮借灏忥紝閭ｄ箞浼氬嚭鐜癹=-1杩欑鎯呭喌
+        // 如果temp比前面的有序序列都要小，那么会出现j=-1这种情况
         while (temp < array[j] && j >= 0)
         {
             array[j + 1] = array[j];
@@ -75,17 +75,47 @@ void InsertSort(T array[], int length)
         array[j + 1] = temp;
     }
 }
+template <typename T>
+void ShellSort(T array[], int length)
+{
+    int step = length;
+    while (step > 1)
+    {
+        // 步长实际上就是一种分组的策略
+        step = step / 3 + 1;
+        for (int i = 0; i < step; i++)
+        {
+            int k;
+            for (int j = i + step; j < length; j += step)
+            {
+                T temp = array[j];
+                k = j - step;
+                while (k >= 0 && temp < array[k])
+                {
+                    array[k + step] = array[k];
+                    k -= step;
+                }
+                array[k + step] = temp;
+            }
+        }
+    }
+}
 void Sort_test(void)
 {
     int test[MAXLEN];
+    std::chrono::high_resolution_clock clock;
     srand((unsigned int)time((long long)0));
     for (int i = 0; i < MAXLEN; i++)
     {
-        test[i] = rand() % 100;
+        test[i] = rand() % 1000;
     }
-    cout << "before sort:" << endl;
-    PrintArray(test, MAXLEN);
+    // cout << "before sort:" << endl;
+    // PrintArray(test, MAXLEN);
+    auto start1 = clock.now();
     InsertSort(test, MAXLEN);
-    cout << "after sort:" << endl;
-    PrintArray(test, MAXLEN);
+    auto end1 = clock.now();
+    auto duration1 = std::chrono::duration_cast<std::chrono::microseconds>(end1 - start1);
+    cout << "花费的时间:" << duration1.count() << endl;
+    // cout << "after sort:" << endl;
+    // PrintArray(test, MAXLEN);
 }

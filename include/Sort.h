@@ -1,12 +1,12 @@
 #pragma once
 #include <cstdio>
 #include <iostream>
-
+#include <chrono>
 using std::cerr;
 using std::cin;
 using std::cout;
 using std::endl;
-#define MAXLEN 5
+#define MAXLEN 100000
 // 交换函数
 template <typename T>
 void Swap(T &value1, T &value2);
@@ -26,4 +26,7 @@ void SelectSort(T array[], int length);
 // 插入排序
 template <typename T>
 void InsertSort(T array[], int length);
+// 希尔排序
+template <typename T>
+void ShellSort(T array[], int length);
 void Sort_test(void);
