@@ -100,6 +100,39 @@ void ShellSort(T array[], int length)
         }
     }
 }
+template <typename T>
+void QuickSort(T array[], int start, int end)
+{
+    int left = start;
+    int right = end;
+    T temp = array[start];
+    if (left < right)
+    {
+        while (left < right)
+        {
+            while (left < right && array[right] >= temp)
+            {
+                right--;
+            }
+            if (left < right)
+            {
+                array[left] = array[right];
+            }
+            while (left < right && array[left] <= temp)
+            {
+                left++;
+            }
+            if (left < right)
+            {
+                array[right] = array[left];
+            }
+        }
+        array[left] = temp;
+        QuickSort(array, start, left - 1);
+        QuickSort(array, left + 1, end);
+    }
+}
+
 void Sort_test(void)
 {
     int test[MAXLEN];
@@ -112,7 +145,7 @@ void Sort_test(void)
     // cout << "before sort:" << endl;
     // PrintArray(test, MAXLEN);
     auto start1 = clock.now();
-    InsertSort(test, MAXLEN);
+    QuickSort(test, 0, MAXLEN);
     auto end1 = clock.now();
     auto duration1 = std::chrono::duration_cast<std::chrono::microseconds>(end1 - start1);
     cout << "花费的时间:" << duration1.count() << endl;

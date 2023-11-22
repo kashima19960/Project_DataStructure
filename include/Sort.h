@@ -29,4 +29,8 @@ void InsertSort(T array[], int length);
 // 希尔排序
 template <typename T>
 void ShellSort(T array[], int length);
+// 快速排序
+template <typename T>
+void QuickSort(T array[], int start, int end);
+
 void Sort_test(void);
