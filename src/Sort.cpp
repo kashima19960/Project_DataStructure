@@ -116,7 +116,7 @@ void QuickSort(T array[], int start, int end)
             }
             if (left < right)
             {
-                array[left] = array[right];
+                array[left++] = array[right];
             }
             while (left < right && array[left] <= temp)
             {
@@ -124,7 +124,7 @@ void QuickSort(T array[], int start, int end)
             }
             if (left < right)
             {
-                array[right] = array[left];
+                array[right--] = array[left];
             }
         }
         array[left] = temp;
@@ -132,23 +132,68 @@ void QuickSort(T array[], int start, int end)
         QuickSort(array, left + 1, end);
     }
 }
+template <typename T>
+void Merge(T array[], int start, int mid, int end, T *temp)
+{
+    int left_start = start;
+    int left_end = mid;
+    int right_start = mid + 1;
+    int right_end = end;
+    int count = 0;
+    while (left_start <= left_end && right_start <= right_end)
+    {
+        if (array[left_start] < array[right_start])
+        {
+            temp[count++] = array[left_start++];
+        }
+        else
+        {
+            temp[count++] = array[right_start++];
+        }
+    }
+    while (left_start <= left_end)
+    {
+        temp[count++] = array[left_start++];
+    }
+    while (right_start <= right_end)
+    {
+        temp[count++] = array[right_start++];
+    }
+    for (int i = 0; i < count; i++)
+    {
+        array[start + i] = temp[i];
+    }
+}
+template <typename T>
+void MergeSort(T array[], int start, int end, T *temp)
+{
+    if (start >= end)
+    {
+        return;
+    }
+    int mid = (start + end) / 2;
+    MergeSort(array, start, mid, temp);
+    MergeSort(array, mid + 1, end, temp);
+    Merge(array, start, mid, end, temp);
+}
 
 void Sort_test(void)
 {
     int test[MAXLEN];
     std::chrono::high_resolution_clock clock;
     srand((unsigned int)time((long long)0));
+    int *temp = new int[100];
     for (int i = 0; i < MAXLEN; i++)
     {
         test[i] = rand() % 1000;
     }
-    // cout << "before sort:" << endl;
-    // PrintArray(test, MAXLEN);
-    auto start1 = clock.now();
-    QuickSort(test, 0, MAXLEN);
-    auto end1 = clock.now();
-    auto duration1 = std::chrono::duration_cast<std::chrono::microseconds>(end1 - start1);
-    cout << "花费的时间:" << duration1.count() << endl;
-    // cout << "after sort:" << endl;
-    // PrintArray(test, MAXLEN);
+    cout << "before sort:" << endl;
+    PrintArray(test, MAXLEN);
+    // auto start1 = clock.now();
+    QuickSort(test, 0, MAXLEN - 1);
+    // auto end1 = clock.now();
+    // auto duration1 = std::chrono::duration_cast<std::chrono::microseconds>(end1 - start1);
+    // cout << "花费的时间:" << duration1.count() << endl;
+    cout << "after sort:" << endl;
+    PrintArray(test, MAXLEN);
 }
