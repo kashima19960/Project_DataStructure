@@ -6,7 +6,7 @@ using std::cerr;
 using std::cin;
 using std::cout;
 using std::endl;
-#define MAXLEN 5
+#define MAXLEN 90000
 // 交换函数
 template <typename T>
 void Swap(T &value1, T &value2);
