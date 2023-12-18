@@ -24,6 +24,7 @@ void PrintArray(T array[], int length)
 template <typename T>
 void BubbleSort(T array[], int length)
 {
+    // 用来判断是否发生了交换
     bool exchange = true;
     for (int i = 0; i < length && exchange != false; i++)
     {
@@ -44,14 +45,18 @@ void SelectSort(T array[], int length)
 {
     for (int i = 0; i < length; i++)
     {
+        // 先假定i就是当前序列最小(大)元素的下标
         int min = i;
+        // 在i后面一个个找，看有没有比i更小(大)的元素下标
         for (int j = i; j < length; j++)
         {
+            // 如果找到了就更新min的值
             if (array[j] < array[min])
             {
                 min = j;
             }
         }
+        // 如果min=i，说明i后面没有比他更小(大)的元素，但是自己与自己交换是没有必要的，所以要进行判断
         if (min != i)
         {
             Swap(array[min], array[i]);
@@ -62,12 +67,13 @@ template <typename T>
 void InsertSort(T array[], int length)
 {
     int j = 0;
+    // 插入排序的思想是将无序序列中的元素逐个插入到前面的有序序列中，单个元素可以看作是有序的，因此i从1开始
     for (int i = 1; i < length; i++)
     {
         T temp = array[i];
         j = i - 1;
         // 如果temp比前面的有序序列都要小，那么会出现j=-1这种情况
-        while (temp < array[j] && j >= 0)
+        while (j >= 0 && temp < array[j])
         {
             array[j + 1] = array[j];
             j--;
