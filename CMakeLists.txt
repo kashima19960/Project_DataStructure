@@ -6,6 +6,7 @@ file(GLOB SRC_FILE
 ${PROJECT_SOURCE_DIR}/src/*.cpp
 ${PROJECT_SOURCE_DIR}/*.cpp
 ${PROJECT_SOURCE_DIR}/include/*.h
+${PROJECT_SOURCE_DIR}/include/*.hpp
 )
 include_directories(./include)
 

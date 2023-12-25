@@ -1,6 +1,6 @@
-#include "Sort.h"
+#include <Queue.hpp>
 
 int main(int argc, char const *argv[])
 {
-    Sort_test();
+    QueueTest();
 }

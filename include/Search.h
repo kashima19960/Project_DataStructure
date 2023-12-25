@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "LinkList.h"
+#include "LinkList.hpp"
 using std::cerr;
 using std::cin;
 using std::cout;
