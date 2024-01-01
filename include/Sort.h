@@ -6,7 +6,7 @@ using std::cerr;
 using std::cin;
 using std::cout;
 using std::endl;
-#define MAXLEN 90000
+#define MAXLEN 50000
 // 交换函数
 template <typename T>
 void Swap(T &value1, T &value2);
@@ -34,7 +34,7 @@ template <typename T>
 void QuickSort(T array[], int start, int end);
 // 归并排序
 template <typename T>
-void MergeSort(T array[], int start, int end, T *temp);
+void MergeSort(T array[], int start, int end);
 template <typename T>
-void Merge(T array[], int start, int mid, int end, T *temp);
+void Merge(T array[], int start, int mid, int end);
 void Sort_test(void);

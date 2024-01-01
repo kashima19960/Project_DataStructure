@@ -6,6 +6,7 @@ void Swap(T &value1, T &value2)
     value1 = value2;
     value2 = temp;
 }
+
 template <typename T>
 void PrintArray(T array[], int length)
 {
@@ -21,6 +22,7 @@ void PrintArray(T array[], int length)
     }
     cout << endl;
 }
+
 template <typename T>
 void BubbleSort(T array[], int length)
 {
@@ -40,6 +42,7 @@ void BubbleSort(T array[], int length)
         }
     }
 }
+
 template <typename T>
 void SelectSort(T array[], int length)
 {
@@ -63,6 +66,7 @@ void SelectSort(T array[], int length)
         }
     }
 }
+
 template <typename T>
 void InsertSort(T array[], int length)
 {
@@ -81,6 +85,7 @@ void InsertSort(T array[], int length)
         array[j + 1] = temp;
     }
 }
+
 template <typename T>
 void ShellSort(T array[], int length)
 {
@@ -106,6 +111,7 @@ void ShellSort(T array[], int length)
         }
     }
 }
+
 template <typename T>
 void QuickSort(T array[], int start, int end)
 {
@@ -135,14 +141,16 @@ void QuickSort(T array[], int start, int end)
     QuickSort(array, start, left - 1);
     QuickSort(array, left + 1, end);
 }
+
 template <typename T>
-void Merge(T array[], int start, int mid, int end, T *temp)
+void Merge(T array[], int start, int mid, int end)
 {
     int left_start = start;
     int left_end = mid;
     int right_start = mid + 1;
     int right_end = end;
     int count = 0;
+    T *temp = new T[end - start + 1];
     while (left_start <= left_end && right_start <= right_end)
     {
         if (array[left_start] < array[right_start])
@@ -167,17 +175,18 @@ void Merge(T array[], int start, int mid, int end, T *temp)
         array[start + i] = temp[i];
     }
 }
+
 template <typename T>
-void MergeSort(T array[], int start, int end, T *temp)
+void MergeSort(T array[], int start, int end)
 {
     if (start >= end)
     {
         return;
     }
     int mid = (start + end) / 2;
-    MergeSort(array, start, mid, temp);
-    MergeSort(array, mid + 1, end, temp);
-    Merge(array, start, mid, end, temp);
+    MergeSort(array, start, mid);
+    MergeSort(array, mid + 1, end);
+    Merge(array, start, mid, end);
 }
 
 void Sort_test(void)
@@ -188,12 +197,12 @@ void Sort_test(void)
     int *temp = new int[100];
     for (int i = 0; i < MAXLEN; i++)
     {
-        test[i] = rand() % 10 + 1;
+        test[i] = rand() % 100000000 + 1;
     }
 #if 0
     cout << "before sort:" << endl;
     PrintArray(test, MAXLEN);
-    QuickSort(test, 0, MAXLEN - 1);
+    MergeSort(test, 0, MAXLEN - 1);
     cout << "after sort:" << endl;
     PrintArray(test, MAXLEN);
 #else
