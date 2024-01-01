@@ -1,4 +1,5 @@
-#pragma once
+#ifndef DYNAMICARRAY_H
+#define DYNAMICARRAY_H
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
@@ -27,3 +28,4 @@ public:
     ~Dynamic_array();
 };
 void DynamicArrayTest();
+#endif

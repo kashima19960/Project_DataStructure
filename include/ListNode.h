@@ -1,4 +1,5 @@
-#pragma once
+#ifndef LISTNODE_H
+#define LISTNODE_H
 class ListNode
 {
 public:
@@ -10,3 +11,4 @@ public:
     void *data;
     ListStackNode *next;
 };
+#endif

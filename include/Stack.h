@@ -1,4 +1,5 @@
-#pragma once
+#ifndef STACK_H
+#define STACK_H
 #include <iostream>
 #include <cstring>
 #include "ListNode.h"
@@ -47,3 +48,4 @@ public:
 void PrintError(char *str, int pos);
 Stack_sta ParenthesisMatching(char str[]);
 void StackTest(void);
+#endif

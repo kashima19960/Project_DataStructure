@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MATRIX_H
+#define MATRIX_H
 #include <iostream>
 #include <cstring>
 #include <vector>
@@ -30,3 +31,4 @@ public:
     void display();
 };
 void MatrixTest(void);
+#endif

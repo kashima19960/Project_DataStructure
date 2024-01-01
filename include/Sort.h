@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SORT_H
+#define SORT_H
 #include <cstdio>
 #include <iostream>
 #include <chrono>
@@ -38,3 +39,4 @@ void MergeSort(T array[], int start, int end);
 template <typename T>
 void Merge(T array[], int start, int mid, int end);
 void Sort_test(void);
+#endif

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CIRCLELINKLIST_H
+#define CIRCLELINKLIST_H
 #include <iostream>
 #include "ListNode.h"
 using std::cerr;
@@ -21,3 +22,4 @@ public:
 // number表示循环的总人数，first_one表示报数的第一个人的编号，move_number表示单次报数次数
 void Joseph(int number, int first_one, int move_number);
 void CirCleLinkListTest(void);
+#endif

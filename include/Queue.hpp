@@ -1,4 +1,5 @@
-#pragma once
+#ifndef QUEUE_H
+#define QUEUE_H
 #include <iostream>
 #include "ListNode.h"
 using std::cerr;
@@ -170,3 +171,4 @@ public:
         cout << "]" << endl;
     }
 };
+#endif

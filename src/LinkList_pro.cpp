@@ -111,7 +111,7 @@ static bool Mycompare(ListNode *data1, ListNode *data2)
     }
     return false;
 }
-void LinkListTest(void)
+void LinkListProTest(void)
 {
     Mydata data;
     LinkList list;

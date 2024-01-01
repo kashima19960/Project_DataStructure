@@ -1,4 +1,5 @@
-#pragma once
+#ifndef STRINGMATCHING_H
+#define STRINGMATCHING_H
 #include <iostream>
 #include <cstring>
 using std::cerr;
@@ -28,3 +29,4 @@ int KMP(const char *MainString, const char *SubString);
 统计一个字符串中每一个字符出现的次数，这个函数功能只能统计英文字母和阿拉伯数字，无法统计汉字
 */
 void SingleCharCount(char str[]);
+#endif

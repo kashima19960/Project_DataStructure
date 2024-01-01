@@ -11,7 +11,8 @@
     }
     list.List_print(Myprint);
 */
-#pragma once
+#ifndef LINKLISTPRO_H
+#define LINKLISTPRO_H
 #include "ListNode.h"
 #include <iostream>
 using std::cerr;
@@ -32,4 +33,5 @@ public:
     void RemoveByValue(ListNode *node, bool (*COMPARE)(ListNode *, ListNode *));
     void List_print(void (*PRINT)(ListNode *));
 };
-void LinkListTest(void);
+void LinkListProTest(void);
+#endif

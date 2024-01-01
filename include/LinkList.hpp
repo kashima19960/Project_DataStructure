@@ -1,4 +1,5 @@
-#pragma once
+#ifndef LINKLIST__HPP
+#define LINKLIST__HPP
 #include <iostream>
 using std::cout;
 using std::endl;
@@ -15,12 +16,12 @@ class LinkList
 {
 public:
     ListNode<T> *head;
+    ListNode<T> *tail;
     int size;
     LinkList()
     {
-        head = new ListNode<T>;
+        head = tail = NULL;
         size = 0;
-        head->next = NULL;
     }
     ~LinkList()
     {
@@ -29,55 +30,95 @@ public:
             Clear();
         }
     }
-    void Insert(int position, T value)
+    void Pushback(T data)
     {
-        ListNode<T> *newnode = new ListNode<T>;
-        // check the paramater
-        if (position > this->size || this->head == NULL)
+        ListNode<T> *node = new ListNode<T>;
+        node->data = data;
+        node->next = NULL;
+        if (head == NULL)
         {
-            position = this->size;
+            head = tail = node;
         }
-        // assist pointer
-        ListNode<T> *CurrentNode = this->head;
-        for (int i = 0; i < position; i++)
+        else
         {
-            CurrentNode = CurrentNode->next;
+            tail->next = node;
+            tail = node;
         }
-        newnode->next = CurrentNode->next;
-        CurrentNode->next = newnode;
-        newnode->data = value;
-        size++;
+        this->size++;
+    }
+    void Insert(int position, T data)
+    {
+        // 插入位置不合理就强制进行尾部插入
+        if (position > this->size || position < 0)
+        {
+            this->Pushback(data);
+            return;
+        }
+        ListNode<T> *node = new ListNode<T>;
+        node->data = data;
+        // 头部插入不需要遍历链表，直接利用头指针即可
+        if (position == 0)
+        {
+            node->next = this->head;
+            this->head = node;
+        }
+        // 尾部插入也不需要遍历链表，直接利用尾指针
+        else if (position == size - 1)
+        {
+            tail->next = node;
+            tail = node;
+        }
+        // 在中间插入需要遍历链表，效率会慢很多
+        else
+        {
+            ListNode<T> *Current = this->head;
+            for (int i = 0; i < position - 1; i++)
+            {
+                Current = Current->next;
+            }
+            node->next = Current->next;
+            Current->next = node;
+        }
+        this->size++;
     }
 
     void Remove(int position)
     {
-        if (this->head == NULL)
+        // 删除位置不合理
+        if (position > this->size || position < 0)
         {
-            cout << "error!paramater invalid" << endl;
             return;
         }
-        ListNode<T> *CurrenNode = this->head;
-        for (int i = 0; i < position; i++)
+        ListNode<T> *temp = this->head;
+        //  删除头结点
+        if (position == 0)
         {
-            CurrenNode = CurrenNode->next;
+            this->head = this->head->next;
+            delete temp;
         }
-        ListNode<T> *Pnext = CurrenNode->next;
-        CurrenNode->next = Pnext->next;
-        Pnext->next = NULL;
-        delete Pnext;
-        size--;
+        // 删除处于中间位置的结点，需要遍历整个链表
+        else
+        {
+            ListNode<T> *Currnet = this->head;
+            for (int i = 0; i < position - 1; i++)
+            {
+                Currnet = Currnet->next;
+            }
+            temp = Currnet->next;
+            Currnet->next = Currnet->next->next;
+            delete temp;
+        }
+        this->size--;
     }
-
     void Clear()
     {
-        ListNode<T> *Current = this->head;
-        while (Current != NULL)
+        while (this->head != NULL)
         {
-            ListNode<T> *del_cache = Current->next;
-            delete Current;
-            Current = del_cache;
+            ListNode<T> *temp = this->head;
+            this->head = this->head->next;
+            delete temp;
         }
-        this->head = NULL;
+        this->size = 0;
     }
 
     T SearchByIndex(int index)
@@ -90,30 +131,22 @@ public:
         return CurrentNode->data;
     }
 
-    void Print(void (*print)(T data))
+    void Print()
     {
-        if (this->head == NULL)
+        ListNode<T> *PCurrent = this->head;
+        cout << "[";
+        for (int i = 0; i < this->size; i++)
         {
-            cout << "error!paramater invalid" << endl;
+            cout << PCurrent->data;
+            if (i != this->size - 1)
+            {
+                cout << ",";
+            }
+            PCurrent = PCurrent->next;
         }
-        ListNode<T> *CurrentNode = this->head;
-        while (CurrentNode->next != NULL)
-        {
-            print(CurrentNode->next->data);
-            CurrentNode = CurrentNode->next;
-        }
+        cout << "]" << endl;
     }
 };
-// void myprint(int data)
-// {
-//     cout << data << " ";
-// }
-// void LinkListTest(void)
-// {
-//     LinkList<int> test;
-//     for (int i = 0; i < 8; i++)
-//     {
-//         test.Insert(0, i);
-//     }
-//     test.Print(myprint);
-// }
+void LinkListTest(void);
+
+#endif

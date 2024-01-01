@@ -1,6 +1,6 @@
-#include "Sort.h"
+#include "LinkList.hpp"
 
 int main(int argc, char const *argv[])
 {
-    Sort_test();
+    LinkListTest();
 }
