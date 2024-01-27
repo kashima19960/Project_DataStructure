@@ -1,14 +1,11 @@
 #ifndef LISTNODE_H
 #define LISTNODE_H
+
+template <class T>
 class ListNode
 {
 public:
-    ListNode *next;
-};
-class ListStackNode
-{
-public:
-    void *data;
-    ListStackNode *next;
+    T data;
+    ListNode<T> *next;
 };
 #endif

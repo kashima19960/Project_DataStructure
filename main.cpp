@@ -1,6 +1,6 @@
-#include "LinkList.hpp"
+#include "Stack.hpp"
 
 int main(int argc, char const *argv[])
 {
-    LinkListTest();
+    StackTest();
 }
