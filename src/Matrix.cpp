@@ -1,9 +1,9 @@
 #include "Matrix.h"
-// Ñ¹Ëõ¶Ô³Æ¾ØÕó
+// å‹ç¼©å¯¹ç§°çŸ©é˜µ
 template <typename T>
 bool SymmetricMatrixCondense(T (*matrix)[Demension])
 {
-    // Ê×ÏÈÅĞ¶ÏÕâ¸ö¾ØÕóÊÇ²»ÊÇ¶Ô³Æ¾ØÕó
+    // é¦–å…ˆåˆ¤æ–­è¿™ä¸ªçŸ©é˜µæ˜¯ä¸æ˜¯å¯¹ç§°çŸ©é˜µ
     int array[50] = {0};
     int count = 0;
     for (int i = 1; i < Demension; i++)
@@ -29,7 +29,7 @@ bool SymmetricMatrixCondense(T (*matrix)[Demension])
     }
     return true;
 }
-// Ï¡Êè¾ØÕóµÄÈıÔª×éÑ¹Ëõ·¨
+// ç¨€ç–çŸ©é˜µçš„ä¸‰å…ƒç»„å‹ç¼©æ³•
 TSMatrix::TSMatrix(int row, int cols)
 {
     size = 0;
@@ -72,7 +72,7 @@ void TSMatrix::Store(int row, int col, int data)
     size++;
 }
 
-// ²âÊÔº¯Êı
+// æµ‹è¯•å‡½æ•°
 void MatrixTest(void)
 {
     int a[3][4] = {

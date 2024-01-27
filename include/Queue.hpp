@@ -7,7 +7,7 @@ using std::cin;
 using std::cout;
 using std::endl;
 void QueueTest(void);
-// Á´Ê½¶ÓÁĞÉùÃ÷
+// é“¾å¼é˜Ÿåˆ—å£°æ˜
 template <class T>
 class LinkQueueNode
 {
@@ -60,7 +60,7 @@ public:
         T num = peek();
         if (this->size <= 0)
         {
-            cerr << "¶ÓÁĞÎª¿Õ£¬²»¿ÉÒÔ¼ÌĞø³ö¶Ó£¡" << endl;
+            cerr << "é˜Ÿåˆ—ä¸ºç©ºï¼Œä¸å¯ä»¥ç»§ç»­å‡ºé˜Ÿï¼" << endl;
             exit(0);
         }
         LinkQueueNode<T> *temp = this->front;
@@ -93,7 +93,7 @@ public:
         cout << "]" << endl;
     }
 };
-// Ë³Ğò¶ÓÁĞ
+// é¡ºåºé˜Ÿåˆ—
 template <class T>
 class ArrayQueue
 {
@@ -134,7 +134,7 @@ public:
     {
         if (this->size >= this->capacity)
         {
-            cerr << "¶ÓÁĞÒÑÂú£¬ÎŞ·¨¼ÌĞøÌí¼ÓÔªËØ" << endl;
+            cerr << "é˜Ÿåˆ—å·²æ»¡ï¼Œæ— æ³•ç»§ç»­æ·»åŠ å…ƒç´ " << endl;
             return;
         }
         int rear = (this->size + this->front) % this->capacity;
@@ -146,7 +146,7 @@ public:
         int value = peek();
         if (this->size <= 0)
         {
-            cerr << "¶ÓÁĞÒÑ¾­Îª¿Õ£¬ÎŞ·¨¼ÌĞøÉ¾³ıÔªËØ£¡" << endl;
+            cerr << "é˜Ÿåˆ—å·²ç»ä¸ºç©ºï¼Œæ— æ³•ç»§ç»­åˆ é™¤å…ƒç´ ï¼" << endl;
             exit(0);
         }
         this->front = (this->front + 1) % this->capacity;

@@ -19,7 +19,7 @@ public:
     void RemoveByValue(ListNode *node, bool (*COMPARE)(ListNode *, ListNode *));
     void List_print(void (*PRINT)(ListNode *));
 };
-// number表示循环的总人数，first_one表示报数的第一个人的编号，move_number表示单次报数次数
+// number琛ㄧず寰幆鐨勬�讳汉鏁帮紝first_one琛ㄧず鎶ユ暟鐨勭涓�涓汉鐨勭紪鍙凤紝move_number琛ㄧず鍗曟鎶ユ暟娆℃暟
 void Joseph(int number, int first_one, int move_number);
 void CirCleLinkListTest(void);
 #endif

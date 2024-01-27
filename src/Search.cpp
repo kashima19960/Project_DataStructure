@@ -1,5 +1,5 @@
 #include "Search.h"
-// Ë³Ğò²éÕÒ
+// é¡ºåºæŸ¥æ‰¾
 template <typename T>
 int Sec_Search(T arr[], int n, T value)
 {
@@ -28,7 +28,7 @@ ListNode<T> *Link_Search(LinkList<T> *list, T value)
 }
 
 /*
-¶ş·Ö²éÕÒÏŞÖÆÖ»ÄÜÊ¹ÓÃË³Ğò´æ´¢½á¹¹,²¢ÇÒ¼Ù¶¨²éÕÒµÄĞòÁĞÊÇÓĞĞòµÄ
+äºŒåˆ†æŸ¥æ‰¾é™åˆ¶åªèƒ½ä½¿ç”¨é¡ºåºå­˜å‚¨ç»“æ„,å¹¶ä¸”å‡å®šæŸ¥æ‰¾çš„åºåˆ—æ˜¯æœ‰åºçš„
 */
 
 int Binary_Search(int arr[], int n, int value)

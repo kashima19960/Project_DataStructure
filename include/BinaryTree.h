@@ -4,13 +4,13 @@
 using std::cerr;
 using std::cout;
 using std::endl;
-// ¶¨Òå¶ş²æÊ÷½Úµã
+// å®šä¹‰äºŒå‰æ ‘èŠ‚ç‚¹
 class binarynode
 {
 public:
-    char c;             // ½ÚµãÊı¾İÓò
-    binarynode *lchild; // ×óº¢×Ó
-    binarynode *rchild; // ÓÒº¢×Ó
+    char c;             // èŠ‚ç‚¹æ•°æ®åŸŸ
+    binarynode *lchild; // å·¦å­©å­
+    binarynode *rchild; // å³å­©å­
 };
 void Recursion_DLR(binarynode *root);
 void Recursion_LDR(binarynode *root);

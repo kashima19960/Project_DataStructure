@@ -73,12 +73,12 @@ void CirCleLinkList::insert(ListNode *node, int position)
     }
     this->size++;
 }
-// Ğ´µ½Õâ¸öº¯Êı
+// å†™åˆ°è¿™ä¸ªå‡½æ•°
 void CirCleLinkList::RemoveByIndex(int position)
 {
     if (position > this->size)
     {
-        // ÕâÀï±£´æµÄÊÇÏÂ±ê£¬ÏÂ±êÊÇ¼¸£¬Current¾ÍÒÆ¶¯¼¸´Î
+        // è¿™é‡Œä¿å­˜çš„æ˜¯ä¸‹æ ‡ï¼Œä¸‹æ ‡æ˜¯å‡ ï¼ŒCurrentå°±ç§»åŠ¨å‡ æ¬¡
         position = this->size - 1;
     }
     ListNode *Current = &(this->head);
@@ -162,19 +162,19 @@ void Joseph(int number, int first_one, int move_number)
     int index = 1;
     JosephData data[number];
     ListNode *Current = &(list.head);
-    // ¼ì²é²ÎÊı
+    // æ£€æŸ¥å‚æ•°
     if (first_one > number || first_one < 0 || number < 0)
     {
-        cout << "²ÎÊı²»ºÏÀí£¡" << endl;
+        cout << "å‚æ•°ä¸åˆç†ï¼" << endl;
         return;
     }
-    // ´´½¨Ñ­»·Á´±í
+    // åˆ›å»ºå¾ªç¯é“¾è¡¨
     for (int i = 0; i < number; i++)
     {
         data[i].number = i + 1;
         list.pushback((ListNode *)&data[i]);
     }
-    // ÒÆ¶¯µ½µÚÒ»¸ö±¨ÊıÈËµÄÎ»ÖÃ
+    // ç§»åŠ¨åˆ°ç¬¬ä¸€ä¸ªæŠ¥æ•°äººçš„ä½ç½®
     for (int i = 0; i < first_one; i++)
     {
         Current = Current->next;
@@ -187,13 +187,13 @@ void Joseph(int number, int first_one, int move_number)
             index++;
         }
         index = 1;
-        cout << "±¾ÂÖ³ö¾ÖµÄÎª£º";
+        cout << "æœ¬è½®å‡ºå±€çš„ä¸ºï¼š";
         Myprint(Current);
         list.RemoveByValue(Current, Mycompare);
         Current = Current->next;
     }
     cout << endl;
-    cout << "×îºóµÄÓ®¼ÒÊÇ£º";
+    cout << "æœ€åçš„èµ¢å®¶æ˜¯ï¼š";
     list.List_print(Myprint);
 }
 

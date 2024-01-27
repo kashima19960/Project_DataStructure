@@ -12,20 +12,20 @@ using std::endl;
 class triple
 {
 public:
-    // ¾ØÕóĞĞ±ê
+    // çŸ©é˜µè¡Œæ ‡
     int i;
-    // ¾ØÕóÁĞ±ê
+    // çŸ©é˜µåˆ—æ ‡
     int j;
-    // Êı¾İ
+    // æ•°æ®
     int data;
 };
 class TSMatrix
 {
 public:
     triple data[MAXNUMBER];
-    int Row;  // ¾ØÕóµÄĞĞÊı
-    int Cols; // ¾ØÕóµÄÁĞÊı
-    int size; // ·ÇÁãÔªËØµÄ¸öÊı
+    int Row;  // çŸ©é˜µçš„è¡Œæ•°
+    int Cols; // çŸ©é˜µçš„åˆ—æ•°
+    int size; // éé›¶å…ƒç´ çš„ä¸ªæ•°
     void Store(int row, int col, int data);
     TSMatrix(int row, int cols);
     void display();

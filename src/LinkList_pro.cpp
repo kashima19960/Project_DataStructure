@@ -61,7 +61,7 @@ void LinkList::RemoveByIndex(int position)
 {
     if (position > this->size)
     {
-        // ÕâÀï±£´æµÄÊÇÏÂ±ê£¬ÏÂ±êÊÇ¼¸£¬Current¾ÍÒÆ¶¯¼¸´Î
+        // è¿™é‡Œä¿å­˜çš„æ˜¯ä¸‹æ ‡ï¼Œä¸‹æ ‡æ˜¯å‡ ï¼ŒCurrentå°±ç§»åŠ¨å‡ æ¬¡
         position = this->size - 1;
     }
     ListNode *Current = &(this->head);

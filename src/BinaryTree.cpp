@@ -78,7 +78,7 @@ void BinaryTreeRelease(binarynode *root)
 }
 void BinaryTreeTest(void)
 {
-    // 创建节点
+    // 鍒涘缓鑺傜偣
     binarynode node1 = {'A', NULL, NULL};
     binarynode node2 = {'B', NULL, NULL};
     binarynode node3 = {'C', NULL, NULL};
@@ -87,7 +87,7 @@ void BinaryTreeTest(void)
     binarynode node6 = {'F', NULL, NULL};
     binarynode node7 = {'G', NULL, NULL};
     binarynode node8 = {'H', NULL, NULL};
-    // 建立节点关系
+    // 寤虹珛鑺傜偣鍏崇郴
     node1.lchild = &node2;
     node1.rchild = &node6;
     node2.rchild = &node3;
