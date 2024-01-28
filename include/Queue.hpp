@@ -1,27 +1,13 @@
 #ifndef QUEUE_H
 #define QUEUE_H
-#include <iostream>
-#include "ListNode.h"
-using std::cerr;
-using std::cin;
-using std::cout;
-using std::endl;
+#include "common.h"
 void QueueTest(void);
-// 链式队列声明
-template <class T>
-class LinkQueueNode
-{
-public:
-    T data;
-    LinkQueueNode *next;
-};
-
 template <class T>
 class LinkQueue
 {
 private:
-    LinkQueueNode<T> *front;
-    LinkQueueNode<T> *rear;
+    ListNode<T> *front;
+    ListNode<T> *rear;
     int size;
 
 public:
@@ -39,7 +25,7 @@ public:
     }
     void Push(T data)
     {
-        LinkQueueNode<T> *node = new LinkQueueNode<T>;
+        ListNode<T> *node = new ListNode<T>;
         node->data = data;
         node->next = NULL;
 
@@ -63,7 +49,7 @@ public:
             cerr << "队列为空，不可以继续出队！" << endl;
             exit(0);
         }
-        LinkQueueNode<T> *temp = this->front;
+        ListNode<T> *temp = this->front;
         this->front = this->front->next;
         this->size--;
         delete temp;
@@ -80,7 +66,7 @@ public:
     void PrintArrayQueue()
     {
         cout << "[";
-        LinkQueueNode<T> *Current = this->front;
+        ListNode<T> *Current = this->front;
         for (int i = 0; i < size; i++)
         {
             cout << Current->data;

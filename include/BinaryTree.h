@@ -1,9 +1,6 @@
 #ifndef BINARYTREE_H
 #define BINARYTREE_H
-#include <iostream>
-using std::cerr;
-using std::cout;
-using std::endl;
+#include "common.h"
 // 定义二叉树节点
 class binarynode
 {

@@ -1,14 +1,8 @@
 #ifndef MATRIX_H
 #define MATRIX_H
-#include <iostream>
-#include <cstring>
-#include <vector>
+#include "common.h"
 #define Demension 3
 #define MAXNUMBER 50
-using std::cerr;
-using std::cin;
-using std::cout;
-using std::endl;
 class triple
 {
 public:

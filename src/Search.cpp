@@ -1,4 +1,5 @@
 #include "Search.h"
+
 // 顺序查找
 template <typename T>
 int Sec_Search(T arr[], int n, T value)

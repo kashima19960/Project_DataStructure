@@ -1,11 +1,7 @@
 #ifndef CIRCLELINKLIST_H
 #define CIRCLELINKLIST_H
-#include <iostream>
-#include "ListNode.h"
-using std::cerr;
-using std::cout;
-using std::endl;
-using std::string;
+
+#include "common.h"
 template <class T>
 class CirCleLinkList
 {

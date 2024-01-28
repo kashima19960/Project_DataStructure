@@ -1,12 +1,6 @@
 #ifndef SORT_H
 #define SORT_H
-#include <cstdio>
-#include <iostream>
-#include <chrono>
-using std::cerr;
-using std::cin;
-using std::cout;
-using std::endl;
+#include "common.h"
 #define MAXLEN 50000
 // 交换函数
 template <typename T>

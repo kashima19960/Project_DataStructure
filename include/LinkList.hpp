@@ -1,16 +1,7 @@
 #ifndef LINKLIST__HPP
 #define LINKLIST__HPP
-#include <iostream>
-using std::cout;
-using std::endl;
+#include "common.h"
 
-template <class T>
-class ListNode
-{
-public:
-    T data;
-    ListNode *next;
-};
 template <class T>
 class LinkList
 {

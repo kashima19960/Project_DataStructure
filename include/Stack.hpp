@@ -1,12 +1,6 @@
 #ifndef STACK_H
 #define STACK_H
-#include <iostream>
-#include <cstring>
-#include "ListNode.h"
-using std::cerr;
-using std::cin;
-using std::cout;
-using std::endl;
+#include "common.h"
 #define CAPACITY 1024
 enum Stack_sta
 {

@@ -1,12 +1,7 @@
 #ifndef DYNAMICARRAY_H
 #define DYNAMICARRAY_H
-#include <iostream>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-using std::cin;
-using std::cout;
-using std::endl;
+
+#include "common.h"
 class Dynamic_array
 {
 public:

@@ -1,11 +1,6 @@
 #ifndef STRINGMATCHING_H
 #define STRINGMATCHING_H
-#include <iostream>
-#include <cstring>
-using std::cerr;
-using std::cin;
-using std::cout;
-using std::endl;
+#include "common.h"
 void StringTest(void);
 // 字符串匹配BF(brute-force)算法实现
 int BF(const char *MainString, const char *SubString);
