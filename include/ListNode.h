@@ -8,4 +8,14 @@ public:
     T data;
     ListNode<T> *next;
 };
+
+template <class T>
+class Pair
+{
+public:
+    unsigned long long key;
+    T value;
+    Pair<T> *next;
+};
+
 #endif
